@@ -1,13 +1,8 @@
 <div align="center">
 
-[![Hello World, I'm GamingEvolutionCentre!](assets/header.gif)](https://github.com/GamingEvolutionCentre)
-Background GIF by [Aliciel](https://www.pinterest.com/pin/5277724550564022/) on [Pinterest](https://www.pinterest.com/).
-
-<a href="https://www.twitch.tv/gamingevolutioncentre" target="_blank" rel="noreferrer"><img
+  <a href="https://www.twitch.tv/gamingevolutioncentre" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&style=for-the-badge&color=6441a4&labelColor=1c1917&label=TWITCH+STATUS" /></a>
 
-
-<p align="center"">
   <a href="https://www.github.com/GamingEvolutionCentre" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /> </picture> </a>
   <a href="https://www.discord.gg/yWfKYRWDF6" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" width="32" height="32" /> </picture> </a>
   <a href="https://www.twitch.tv/gamingevolutioncentre" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitch-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitch.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitch.svg" width="32" height="32" /> </picture> </a>
