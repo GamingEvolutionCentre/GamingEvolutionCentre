@@ -30,6 +30,8 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 [![A random quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
 
+</div>
+
 ## 👷 Check out what I'm currently working on:
 
 - increasing my [GitHub stats rating](##🏆-my-stats) by contributing to [open source](https://opensource.com).
