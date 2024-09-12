@@ -22,17 +22,15 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
   <img style="height: auto; width: 55%;" class="img" src="https://streak-stats.demolab.com/?user=GamingEvolutionCentre&theme=dark&layout=compact" /></div>
 </div>
 
-- 🔭 I’m currently working at [P33R Finance](https://www.linkedin.com/company/p33r-finance/) where we were [incubated by Tenity](https://www.linkedin.com/posts/p33r-finance_tenity-invests-in-13-disruptive-early-stage-activity-7118550943268294656-cH__?utm_source=share&utm_medium=member_desktop) and selected for [AWS Startups Build Accelerator 2023](https://www.linkedin.com/posts/p33r-finance_p33r-awsbuildaccelerator-activity-7121072561857208320-U9f-?utm_source=share&utm_medium=member_desktop).
-- 🌱 I’m passionate about [serverless in AWS](https://aws.amazon.com/serverless/) and [Web3](https://ethereum.org/en/web3/).
-- 📝 I’m aiming to write **one article per week** starting from November 2023.
-- 🏆 I'm striving to increase my [GitHub stats rating](#🏆-my-stats) by contributing to [open source](https://opensource.com/resources/what-open
-  
 ## 👷 Check out what I'm currently working on:
-- 🔭 I’m currently working on my ![Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot)
+- 🔭 I’m currently working on my ![Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot).
 
 ## 🌱 My latest projects:
-- 🌱 I’m passionate about my ![README](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre) - My Profile & Readme
-- 🌱 I’m passionate about my ![Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python
+- 🌱 I’m passionate about my ![README](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre) - My Profile & Readme.
+
+- 🌱 I’m passionate about my ![Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
+
+- 🏆 I'm striving to increase my [GitHub stats rating](#🏆-my-stats) by contributing to [open source](https://opensource.com/resources/what-open).
 
 <div align="center">
 
@@ -42,7 +40,7 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 ## 💻 My Tech Stack:
 
-[![Next.js, Svelte, Node.js, JavaScript, TypeScript, AWS, GCP, Solidity](https://skillicons.dev/icons?i=next,svelte,nodejs,js,ts,aws,gcp,solidity)](https://skillicons.dev)
+[![Python, Node.js, Java](https://skillicons.dev/icons?i=py,nodejs,java)](https://skillicons.dev)
 
 
 ## 🏆 My Stats:
