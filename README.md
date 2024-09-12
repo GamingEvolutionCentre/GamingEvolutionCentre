@@ -17,8 +17,8 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 <p>
 <div class='container' align="center">
-    <img height=175 alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre&show_icons=true&theme=dark" />&nbsp;&nbsp;
-    <img height=175 alt="Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GamingEvolutionCentre&show_icons=true&theme=dark&langs_count=8&layout=compact" />&nbsp;&nbsp;
+    <img height=175 width=175 alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre&show_icons=true&theme=dark" />&nbsp;&nbsp;
+    <img height=175 width=175 alt="Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GamingEvolutionCentre&show_icons=true&theme=dark&langs_count=8&layout=compact" />&nbsp;&nbsp;
     <img height=175 width=175 alt="Streak Stats" src="https://streak-stats.demolab.com/?user=GamingEvolutionCentre&theme=dark&layout=compact" />&nbsp;&nbsp;
 </p>
 
