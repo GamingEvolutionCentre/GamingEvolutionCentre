@@ -57,4 +57,4 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 </div>
 
 ## 📫 How to reach me:
-- [![You can reach me on my socials at the top of the page.]
+- ![You can reach me on my socials at the top of the page.]
