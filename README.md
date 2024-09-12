@@ -29,17 +29,6 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 </div>
 
-## 👷 Check out what I'm currently working on:
-
-- increasing my [GitHub stats rating](##🏆-my-stats) by contributing to [open source](https://opensource.com).
-
-- [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot).
-
-## 🌱 My latest projects:
-- [README](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre) - My Profile & Readme.
-
-- [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
-
 <div align="center">
 
 ## OS:
@@ -68,6 +57,16 @@ These are languages I know a little in or want to learn.
 ![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white)
 </div>
 
+## 👷 Check out what I'm currently working on:
+
+- increasing my [GitHub stats rating](##🏆-my-stats) by contributing to [open source](https://opensource.com).
+
+- [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot).
+
+## 🌱 My latest projects:
+- [README](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre) - My Profile & Readme.
+
+- [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
 
 ## 📫 How to reach me:
 - You can reach me on my socials at the top of the page.
