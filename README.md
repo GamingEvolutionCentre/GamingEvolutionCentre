@@ -31,7 +31,7 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 ## 🌱 My latest projects:
 - [README](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre) - My Profile & Readme.
 
--[Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
+- [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
 
 <div align="center">
 
