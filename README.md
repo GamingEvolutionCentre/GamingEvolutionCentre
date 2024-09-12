@@ -43,6 +43,7 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 - [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
 
+div align="center">
 
 ## 💻 Programing Languages:
 These are languages I know a little in or want to learn.
