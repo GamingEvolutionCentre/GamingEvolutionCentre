@@ -14,14 +14,11 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 </div>
 
 ## 🏆 My Stats:
-
-<p>
 <div class='container' align="center">
     <img height=175 width=350 alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre&show_icons=true&theme=dark" />&nbsp;&nbsp;
     <img height=175 width=350 alt="Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GamingEvolutionCentre&show_icons=true&theme=dark&langs_count=8&layout=compact" />&nbsp;&nbsp;
     <img height=175 width=350 alt="Streak Stats" src="https://streak-stats.demolab.com/?user=GamingEvolutionCentre&theme=dark&layout=compact" />&nbsp;&nbsp;
 </p>
-
 </div>
 
 <div align="center">
@@ -45,16 +42,21 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 <div align="center">
 
+## 💻 Programs I Use Regular:
+![VS Code Insiders](https://img.shields.io/badge/VS%20Code%20Insiders-35b393.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) &nbsp;
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white) &nbsp;
+![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white) &nbsp;
+![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white) &nbsp;
+
+
+
+
 ## 💻 Programing Languages:
 These are languages I know a little in or want to learn.
 [![Powershell, Python, JS, Node.js, Java, Net, Npm](https://skillicons.dev/icons?i=ps,py,js,nodejs,java,dotnet,npm)](https://skillicons.dev)
 
 
 ## 🎮 When I'm AFK:
-
-![VS Code Insiders](https://img.shields.io/badge/VS%20Code%20Insiders-35b393.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) &nbsp;
-![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white) &nbsp;
-![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white) &nbsp;
 ![Xbox](https://img.shields.io/badge/xbox-%23107C10.svg?style=for-the-badge&logo=xbox&logoColor=white) &nbsp;
 ![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white)
 </div>
