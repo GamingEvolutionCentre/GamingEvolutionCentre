@@ -46,7 +46,7 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 ## 💻 Programing Languages:
 These are languages I know a little in or want to learn.
-[![Powershell, Python, Node.js, Java, Net, Npm](https://skillicons.dev/icons?i=ps,py,nodejs,java,dotnet,npm)](https://skillicons.dev)
+[![Powershell, Python, JS, Node.js, Java, Net, Npm](https://skillicons.dev/icons?i=ps,py,js,nodejs,java,dotnet,npm)](https://skillicons.dev)
 
 
 ## 🎮 When I'm AFK:
