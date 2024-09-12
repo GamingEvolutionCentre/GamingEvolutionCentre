@@ -13,6 +13,13 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 </p>
 </div>
 
+## 🏆 My Stats:
+
+<p>
+    <img height=175 alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=kshyun28&show_icons=true&count_private=true&theme=dark" />&nbsp;&nbsp;
+    <img height=175 alt="Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kshyun28&layout=compact&theme=dark" />&nbsp;&nbsp;
+</p>
+
 <div class='container' align="center">
   <img style="height: auto; width: 55%;" class="img" src="https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre&show_icons=true&theme=dark" />
 &nbsp;
@@ -43,13 +50,6 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 [![Python, Node.js, Java](https://skillicons.dev/icons?i=py,nodejs,java)](https://skillicons.dev)
 
-
-## 🏆 My Stats:
-
-<p>
-    <img height=175 alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=kshyun28&show_icons=true&count_private=true&theme=dark" />&nbsp;&nbsp;
-    <img height=175 alt="Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kshyun28&layout=compact&theme=dark" />&nbsp;&nbsp;
-</p>
 
 ## 🎮 When I'm AFK:
 
