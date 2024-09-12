@@ -20,9 +20,10 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
   <img style="height: auto; width: 55%;" class="img" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GamingEvolutionCentre&show_icons=true&theme=dark&langs_count=8&layout=compact" />
 &nbsp;
   <img style="height: auto; width: 55%;" class="img" src="https://streak-stats.demolab.com/?user=GamingEvolutionCentre&theme=dark&layout=compact" /></div>
-
 </div>
+
 ## 👷 Check out what I'm currently working on:
+
 - increasing my [GitHub stats rating](#🏆-my-stats) by contributing to [open source](https://opensource.com/resources/what-open).
 
 - [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot).
