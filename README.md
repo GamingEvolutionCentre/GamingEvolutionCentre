@@ -26,7 +26,7 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 ## 👷 Check out what I'm currently working on:
 
-- increasing my [GitHub stats rating](#🏆-my-stats) by contributing to [open source](https://opensource.com/resources/what-open).
+- increasing my [GitHub stats rating](##🏆-my-stats) by contributing to [open source](https://opensource.com).
 
 - [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot).
 
