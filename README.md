@@ -1,4 +1,5 @@
 <div align="center">
+
 <img src="https://raw.githubusercontent.com/GamingEvolutionCentre/GamingEvolutionCentre/main/GamingEvolutionCentreLogo.png" />
   
 <a href="https://www.twitch.tv/gamingevolutioncentre" target="_blank" rel="noreferrer"><img
@@ -12,17 +13,14 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
   <a href="http://www.instagram.com/GamingEvolutionCentre" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /> </picture> </a>
   <a href="https://www.x.com/GamingEvoCentre" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg" width="32" height="32" /> </picture> </a>
 </p>
-</div>
+
 
 ## 🏆 My Stats:
-<div class='container' align="center">
-    <img height=175 width=350 alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre&show_icons=true&theme=dark" />&nbsp;&nbsp;
-    <img height=175 width=350 alt="Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GamingEvolutionCentre&show_icons=true&theme=dark&langs_count=8&layout=compact" />&nbsp;&nbsp;
-    <img height=175 width=350 alt="Streak Stats" src="https://streak-stats.demolab.com/?user=GamingEvolutionCentre&theme=dark&layout=compact" />&nbsp;&nbsp;
-</p>
-</div>
 
-<div align="center">
+  <img height=175 width=350 alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre&show_icons=true&theme=dark" />&nbsp;&nbsp;
+  <img height=175 width=350 alt="Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GamingEvolutionCentre&show_icons=true&theme=dark&langs_count=8&layout=compact" />&nbsp;&nbsp;
+  <img height=175 width=350 alt="Streak Stats" src="https://streak-stats.demolab.com/?user=GamingEvolutionCentre&theme=dark&layout=compact" />&nbsp;&nbsp;
+</p>
 
 ## 💡 A Quote:
 
@@ -53,18 +51,16 @@ These are languages I know a little in or want to learn.
 ## 🎮 When I'm AFK:
 ![Xbox](https://img.shields.io/badge/xbox-%23107C10.svg?style=for-the-badge&logo=xbox&logoColor=white) &nbsp;
 ![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white)
-</div>
-
-## 👷 Check out what I'm currently working on:
-
-- increasing my [GitHub stats rating](##🏆-my-stats) by contributing to [open source](https://opensource.com).
-
-- [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot).
 
 ## 🌱 My latest projects:
-- [README & GitHub stats rating](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre) - My Profile, GitHub stats rating & Readme.
+[README & GitHub stats rating](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre) - My Profile, GitHub stats rating & Readme.
 
-- [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
+[Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
+
+## 👷 Check out what I'm currently working on:
+[Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot).
 
 ## 📫 How to reach me:
-- You can reach me on my socials at the top of the page.
+You can reach me on my socials at the top of the page.
+
+</div>
