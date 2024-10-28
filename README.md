@@ -62,7 +62,7 @@ These are languages I know a little in or want to learn.
 - [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot).
 
 ## 🌱 My latest projects:
-- [README](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre) - My Profile & Readme.
+- [README & GitHub stats rating](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre) - My Profile, GitHub stats rating & Readme.
 
 - [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
 
