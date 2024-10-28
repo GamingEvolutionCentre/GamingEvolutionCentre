@@ -53,12 +53,17 @@ These are languages I know a little in or want to learn.
 ![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white)
 
 ## 🌱 My latest projects:
-[README & GitHub stats rating](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre) - My Profile, GitHub stats rating & Readme.
+[ReadMe & GitHub stats rating](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre) - My Profile, GitHub stats rating & Readme.
 
-[Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
+
+[Website](https://github.com/GamingEvolutionCentre/Website) - My Website.
+
+[Discord Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
 
 ## 👷 Check out what I'm currently working on:
-[Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot)
+[Discord Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot)
+
+[Website](https://github.com/GamingEvolutionCentre/Website)
 
 ## 📫 How to reach me:
 You can reach me on my socials at the top of the page.
