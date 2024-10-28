@@ -58,7 +58,7 @@ These are languages I know a little in or want to learn.
 [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
 
 ## 👷 Check out what I'm currently working on:
-[Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot).
+[Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot)
 
 ## 📫 How to reach me:
 You can reach me on my socials at the top of the page.
