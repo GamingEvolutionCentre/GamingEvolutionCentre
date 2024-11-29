@@ -57,12 +57,14 @@ These are languages I know a little in or want to learn.
 
 ## 👷 Check out what I'm currently working on:
 
-- increasing my [GitHub stats rating](##🏆-my-stats) by contributing to [open source](https://opensource.com).
+- Increasing my [GitHub stats rating](##🏆-my-stats) by contributing to [open source](https://opensource.com).
 
 - [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot).
 
 ## 🌱 My latest projects:
 - [README](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre) - My Profile & Readme.
+
+- [Website](https://github.com/GamingEvolutionCentre/Website) - My website.
 
 - [Discord-Bot](https://github.com/GamingEvolutionCentre/Gaming-Evolution-Centre-Bot) - My Discord Bot written in Python.
 
