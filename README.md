@@ -13,8 +13,8 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 ## 🏆 My Stats:
 
-<img height=200 width=500 alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre&show_icons=true&theme=dark" />&nbsp;&nbsp;
-<img height=200 width=500 alt="Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GamingEvolutionCentre&show_icons=true&theme=dark&langs_count=8&layout=compact" />&nbsp;&nbsp;
+<img height=200 width=500 alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre&show_icons=true&theme=transparent" />&nbsp;&nbsp;
+<img height=200 width=500 alt="Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GamingEvolutionCentre&show_icons=true&theme=transparent&langs_count=10&layout=compact" />&nbsp;&nbsp;
 
 ## 💡 A Quote:
 
