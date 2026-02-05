@@ -3,9 +3,7 @@
 <img src="https://raw.githubusercontent.com/GamingEvolutionCentre/GamingEvolutionCentre/main/GamingEvolutionCentreLogo.png" />
 
 <a href="https://www.twitch.tv/gamingevolutioncentre" target="_blank" rel="noreferrer"><img
-src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&style=for-the-badge&color=6441a4&labelColor=1c1917&label=TWITCH+STATUS" /></a>
-
-<a href="https://www.youtube.com/@GamingEvolutionCentre" target="_blank" rel="noreferrer"><img
+src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&style=for-the-badge&color=6441a4&labelColor=1c1917&label=TWITCH+STATUS" /></a> <a href="https://www.youtube.com/@GamingEvolutionCentre" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&style=for-the-badge&color=b2071d&labelColor=1c1917&label=YOUTUBE+STATUS" /></a>
 
  
