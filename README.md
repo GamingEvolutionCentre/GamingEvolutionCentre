@@ -10,8 +10,6 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 ## 🏆 My Stats:
 
-[![GamingEvolutionCentre's GitHub stats](https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre)](https://github.com/GamingEvolutionCentre/github-readme-stats)
-
 <img height=200 width=500 alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre&show_icons=true&theme=transparent" />&nbsp;&nbsp;
 
 
