@@ -10,10 +10,9 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 ## 🏆 My Stats:
 
-<img height=200 width=500 alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre&show_icons=true&theme=transparent" />&nbsp;&nbsp;
+[![GamingEvolutionCentre's GitHub stats](https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre&show_reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage,icons=true&theme=transparent)](https://github.com/GamingEvolutionCentre/github-readme-stats)
 
-
-<img height=200 width=500 alt="Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GamingEvolutionCentre&show_icons=true&theme=transparent&langs_count=10&layout=compact" />&nbsp;&nbsp;
+[![GamingEvolutionCentre's Top-Languages](https://github-readme-stats.vercel.app/api?username=GamingEvolutionCentre&shown_icons=true&theme=transparent&langs_count=10&layout=compact)](https://github.com/GamingEvolutionCentre/github-readme-stats)
 
 ## 💡 A Quote:
 
