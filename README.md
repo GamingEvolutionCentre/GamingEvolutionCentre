@@ -11,8 +11,6 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 
 ## 🏆 My Stats:
 
-## 🏆 My Stats:
-
 <p align="center">
 <img width="500" alt="GitHub Stats" src="./profile/stats.svg">
 </p>
