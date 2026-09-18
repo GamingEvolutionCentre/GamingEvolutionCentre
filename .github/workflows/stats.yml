@@ -316,8 +316,15 @@ jobs:
                       else 0
                   )
 
-                  # Bar length is 200px
+                  # -------------------------------------------------
+                  # Bar layout
+                  # Move bars right to leave a gap after language
+                  # Keep bars at 200px
+                  # Leave a gap before percentage
+                  # -------------------------------------------------
+                  bar_x = 185
                   bar_width = 200
+                  percentage_x = 450
 
                   filled_width = (
                       bar_width * percentage / 100
@@ -332,18 +339,9 @@ jobs:
                     {html.escape(language)}
                   </text>
 
-                  <text
-                    class="percentage"
-                    x="450"
-                    y="{y}"
-                    text-anchor="end"
-                  >
-                    {percentage:.1f}%
-                  </text>
-
                   <rect
                     class="bar-bg"
-                    x="150"
+                    x="{bar_x}"
                     y="{y - 11}"
                     width="{bar_width}"
                     height="8"
@@ -352,12 +350,21 @@ jobs:
 
                   <rect
                     class="bar"
-                    x="150"
+                    x="{bar_x}"
                     y="{y - 11}"
                     width="{filled_width:.1f}"
                     height="8"
                     rx="4"
                   />
+
+                  <text
+                    class="percentage"
+                    x="{percentage_x}"
+                    y="{y}"
+                    text-anchor="end"
+                  >
+                    {percentage:.1f}%
+                  </text>
                   '''
 
                   y += row_height
