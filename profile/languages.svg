@@ -1,8 +1,8 @@
 
 <svg xmlns="http://www.w3.org/2000/svg"
      width="500"
-     height="135"
-     viewBox="0 0 500 135">
+     height="555"
+     viewBox="0 0 500 555">
 
   <style>
     .card {
@@ -33,7 +33,7 @@
     x="0.5"
     y="0.5"
     width="499"
-    height="134"
+    height="554"
     rx="6"
   />
 
@@ -50,6 +50,118 @@
       x="25"
       y="80"
     >
-      No language data found
+      Lua  •  Shell  •  Tree-sitter Query  •  QML
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="110"
+    >
+      CSS  •  Vim Script  •  Python  •  JavaScript  •  C
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="140"
+    >
+      Cap&#x27;n Proto  •  Rust  •  Makefile  •  Nix
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="170"
+    >
+      Scheme  •  PowerShell  •  HTML  •  Ruby  •  Gleam
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="200"
+    >
+      Haskell  •  GLSL  •  Smali  •  PHP  •  Roff  •  Sway
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="230"
+    >
+      ReScript  •  Solidity  •  TypeScript  •  TeX
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="260"
+    >
+      Vue  •  Hack  •  Swift  •  C++  •  Julia  •  Clojure
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="290"
+    >
+      R  •  Go  •  Elixir  •  HCL  •  Jinja  •  Meson
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="320"
+    >
+      Typst  •  Dart  •  Vim Snippet  •  Java  •  Svelte
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="350"
+    >
+      PLpgSQL  •  WGSL  •  GDShader  •  Puppet
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="380"
+    >
+      Pascal  •  Cuda  •  Starlark  •  CWeb
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="410"
+    >
+      SystemVerilog  •  Zig  •  Nushell  •  Mermaid
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="440"
+    >
+      Elm  •  Scala  •  GDScript  •  VHDL  •  SCSS  •  Nu
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="470"
+    >
+      C#  •  Nickel  •  Just  •  Dockerfile
+    </text>
+    
+    <text
+      class="text"
+      x="25"
+      y="500"
+    >
+      RenderScript  •  CodeQL
     </text>
     </svg>
