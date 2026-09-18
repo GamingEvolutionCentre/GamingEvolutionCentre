@@ -2,8 +2,10 @@ name: Update GitHub Stats
 
 on:
   workflow_dispatch:
+
+  # Update the stats/language boxes every 5 minutes
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
