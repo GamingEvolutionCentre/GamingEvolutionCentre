@@ -316,7 +316,9 @@ jobs:
                       else 0
                   )
 
-                  bar_width = 150
+                  # Bar length is 200px
+                  bar_width = 200
+
                   filled_width = (
                       bar_width * percentage / 100
                   )
