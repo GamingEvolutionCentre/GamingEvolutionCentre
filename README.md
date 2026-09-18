@@ -59,6 +59,6 @@ These are languages I know a little in or want to learn.
 [Website](https://github.com/GamingEvolutionCentre/Website)
 
 ## 📫 How to reach me:
-You can reach me on my socials at the top of the page.
+You can reach me on my discord server at the top of the page.
 
 </div>
