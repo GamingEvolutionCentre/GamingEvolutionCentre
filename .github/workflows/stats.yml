@@ -39,12 +39,240 @@ jobs:
           options: username=GamingEvolutionCentre&theme=transparent&langs_count=10&layout=compact
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+name: Update GitHub Stats
 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ---------------------------------------------------------
+      # Checkout profile repository
+      # ---------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      # ---------------------------------------------------------
+      # 1. GitHub Stats
+      # ---------------------------------------------------------
+      - name: Generate GitHub Stats
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=GamingEvolutionCentre&show_icons=true&theme=transparent
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ---------------------------------------------------------
+      # 2. Find every language used across public repositories
+      # ---------------------------------------------------------
+      - name: Generate Languages Used Across Repositories
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p profile
+
+          python3 <<'PY'
+          import json
+          import os
+          import urllib.request
+          import html
+
+          username = "GamingEvolutionCentre"
+          token = os.environ["GH_TOKEN"]
+
+          headers = {
+              "Authorization": f"Bearer {token}",
+              "Accept": "application/vnd.github+json",
+              "X-GitHub-Api-Version": "2022-11-28"
+          }
+
+          def github_get(url):
+              request = urllib.request.Request(url, headers=headers)
+              with urllib.request.urlopen(request) as response:
+                  return json.loads(response.read().decode())
+
+          # Get all public repositories
+          repos = []
+          page = 1
+
+          while True:
+              data = github_get(
+                  f"https://api.github.com/users/{username}/repos"
+                  f"?per_page=100&page={page}&type=owner"
+              )
+
+              if not data:
+                  break
+
+              repos.extend(data)
+              page += 1
+
+          # Collect languages from every non-fork repository
+          language_bytes = {}
+
+          for repo in repos:
+              if repo.get("fork"):
+                  continue
+
+              languages = github_get(repo["languages_url"])
+
+              for language, size in languages.items():
+                  language_bytes[language] = (
+                      language_bytes.get(language, 0) + size
+                  )
+
+          # Sort by amount of code
+          languages = sorted(
+              language_bytes,
+              key=language_bytes.get,
+              reverse=True
+          )
+
+          # SVG dimensions
+          width = 500
+          padding = 25
+          title_y = 40
+
+          if languages:
+              rows = []
+              line = []
+              current_width = 0
+
+              # Approximate text width so languages wrap cleanly
+              for language in languages:
+                  item = language
+                  estimated = len(item) * 9 + 30
+
+                  if current_width + estimated > width - (padding * 2):
+                      rows.append(line)
+                      line = []
+                      current_width = 0
+
+                  line.append(item)
+                  current_width += estimated
+
+              if line:
+                  rows.append(line)
+
+              height = 100 + (len(rows) * 32)
+          else:
+              rows = [["No language data found"]]
+              height = 140
+
+          svg = f'''<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="{width}"
+              height="{height}"
+              viewBox="0 0 {width} {height}"
+          >
+            <style>
+              .card {{
+                fill: #00000000;
+                stroke: #e4e2e2;
+                stroke-width: 1;
+              }}
+
+              .title {{
+                fill: #00aeef;
+                font-family: -apple-system, BlinkMacSystemFont,
+                             "Segoe UI", Helvetica, Arial, sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+              }}
+
+              .language {{
+                fill: #8b949e;
+                font-family: -apple-system, BlinkMacSystemFont,
+                             "Segoe UI", Helvetica, Arial, sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+              }}
+            </style>
+
+            <rect
+              class="card"
+              x="0.5"
+              y="0.5"
+              width="{width - 1}"
+              height="{height - 1}"
+              rx="6"
+            />
+
+            <text
+              class="title"
+              x="{padding}"
+              y="{title_y}"
+            >
+              Languages Used Across My Repositories
+            </text>
+          '''
+
+          y = 82
+
+          for row in rows:
+              text = "  •  ".join(row)
+
+              svg += f'''
+                <text
+                  class="language"
+                  x="{padding}"
+                  y="{y}"
+                >{html.escape(text)}</text>
+              '''
+
+              y += 32
+
+          svg += "</svg>"
+
+          with open("profile/languages.svg", "w", encoding="utf-8") as file:
+              file.write(svg)
+
+          print("Languages found:")
+          for language in languages:
+              print(f" - {language}")
+          PY
+
+      # ---------------------------------------------------------
+      # 3. Most Used Languages
+      # ---------------------------------------------------------
+      - name: Generate Most Used Languages
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=GamingEvolutionCentre&theme=transparent&langs_count=10&layout=compact&custom_title=Most%20Used%20Languages
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ---------------------------------------------------------
+      # Commit all three cards
+      # ---------------------------------------------------------
       - name: Commit generated stats
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/stats.svg profile/top-langs.svg
+
+          git add profile/stats.svg
+          git add profile/languages.svg
+          git add profile/top-langs.svg
+
+          git diff --cached --quiet && exit 0
+
+          git commit -m "Update GitHub stats"
+          git push
+      - name: Commit generated stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/
           git diff --cached --quiet && exit 0
           git commit -m "Update GitHub stats"
           git push
