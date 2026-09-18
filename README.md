@@ -15,8 +15,8 @@ src="https://img.shields.io/twitch/status/gamingevolutioncentre?logo=twitchsx&st
 <img width="500" alt="GitHub Stats" src="./profile/stats.svg">
 </p>
 
-<img width="300" alt="Languages Used Across My Repositories" src="./profile/languages.svg">
-<img width="300" alt="Most Used Languages" src="./profile/top-langs.svg">
+<img width="400" alt="Languages Used Across My Repositories" src="./profile/languages.svg">
+<img width="400" alt="Most Used Languages" src="./profile/top-langs.svg">
 
 ## 💡 A Quote:
 
