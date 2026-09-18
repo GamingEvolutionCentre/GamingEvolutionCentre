@@ -13,47 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Generate GitHub Stats
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: stats
-          options: username=GamingEvolutionCentre&show_icons=true&theme=transparent
-          path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate Languages Used Across Repositories
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: top-langs
-          options: username=GamingEvolutionCentre&theme=transparent&langs_count=10&layout=compact&custom_title=Languages%20Used%20Across%20My%20Repositories
-          path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Generate Most Used Languages
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: top-langs
-          options: username=GamingEvolutionCentre&theme=transparent&langs_count=10&layout=compact
-          path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-name: Update GitHub Stats
-
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *"
-
-permissions:
-  contents: write
-
-jobs:
-  generate-stats:
-    runs-on: ubuntu-latest
-
-    steps:
       # ---------------------------------------------------------
       # Checkout profile repository
       # ---------------------------------------------------------
@@ -69,14 +28,15 @@ jobs:
           card: stats
           options: username=GamingEvolutionCentre&show_icons=true&theme=transparent
           path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }}
 
       # ---------------------------------------------------------
-      # 2. Find every language used across public repositories
+      # 2 + 3. Generate language cards from ALL repositories
+      # Public + Private
       # ---------------------------------------------------------
-      - name: Generate Languages Used Across Repositories
+      - name: Generate Language Cards
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
         run: |
           mkdir -p profile
 
@@ -86,7 +46,6 @@ jobs:
           import urllib.request
           import html
 
-          username = "GamingEvolutionCentre"
           token = os.environ["GH_TOKEN"]
 
           headers = {
@@ -97,17 +56,25 @@ jobs:
 
           def github_get(url):
               request = urllib.request.Request(url, headers=headers)
+
               with urllib.request.urlopen(request) as response:
                   return json.loads(response.read().decode())
 
-          # Get all public repositories
+
+          # -----------------------------------------------------
+          # Get ALL repositories accessible by the PAT
+          # Includes public + private repositories
+          # -----------------------------------------------------
           repos = []
           page = 1
 
           while True:
               data = github_get(
-                  f"https://api.github.com/users/{username}/repos"
-                  f"?per_page=100&page={page}&type=owner"
+                  "https://api.github.com/user/repos"
+                  f"?visibility=all"
+                  f"&affiliation=owner"
+                  f"&per_page=100"
+                  f"&page={page}"
               )
 
               if not data:
@@ -116,10 +83,15 @@ jobs:
               repos.extend(data)
               page += 1
 
-          # Collect languages from every non-fork repository
+
+          # -----------------------------------------------------
+          # Collect language byte counts
+          # -----------------------------------------------------
           language_bytes = {}
 
           for repo in repos:
+
+              # Ignore forks
               if repo.get("fork"):
                   continue
 
@@ -130,50 +102,60 @@ jobs:
                       language_bytes.get(language, 0) + size
                   )
 
-          # Sort by amount of code
+
           languages = sorted(
-              language_bytes,
-              key=language_bytes.get,
+              language_bytes.items(),
+              key=lambda item: item[1],
               reverse=True
           )
 
-          # SVG dimensions
+          total_bytes = sum(
+              size for _, size in languages
+          )
+
+
+          # =====================================================
+          # CARD 1:
+          # Languages Used Across My Repositories
+          # =====================================================
+
           width = 500
           padding = 25
-          title_y = 40
 
-          if languages:
-              rows = []
-              line = []
-              current_width = 0
+          language_names = [
+              language for language, _ in languages
+          ]
 
-              # Approximate text width so languages wrap cleanly
-              for language in languages:
-                  item = language
-                  estimated = len(item) * 9 + 30
+          rows = []
+          current_row = []
+          current_length = 0
 
-                  if current_width + estimated > width - (padding * 2):
-                      rows.append(line)
-                      line = []
-                      current_width = 0
+          for language in language_names:
 
-                  line.append(item)
-                  current_width += estimated
+              estimated_length = len(language) + 3
 
-              if line:
-                  rows.append(line)
+              if current_length + estimated_length > 45:
+                  rows.append(current_row)
+                  current_row = []
+                  current_length = 0
 
-              height = 100 + (len(rows) * 32)
-          else:
+              current_row.append(language)
+              current_length += estimated_length
+
+          if current_row:
+              rows.append(current_row)
+
+          if not rows:
               rows = [["No language data found"]]
-              height = 140
 
-          svg = f'''<svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="{width}"
-              height="{height}"
-              viewBox="0 0 {width} {height}"
-          >
+          height = 105 + (len(rows) * 30)
+
+          svg = f'''
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="{width}"
+               height="{height}"
+               viewBox="0 0 {width} {height}">
+
             <style>
               .card {{
                 fill: #00000000;
@@ -185,15 +167,15 @@ jobs:
                 fill: #00aeef;
                 font-family: -apple-system, BlinkMacSystemFont,
                              "Segoe UI", Helvetica, Arial, sans-serif;
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: 600;
               }}
 
-              .language {{
+              .text {{
                 fill: #8b949e;
                 font-family: -apple-system, BlinkMacSystemFont,
                              "Segoe UI", Helvetica, Arial, sans-serif;
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: 500;
               }}
             </style>
@@ -210,50 +192,211 @@ jobs:
             <text
               class="title"
               x="{padding}"
-              y="{title_y}"
+              y="40"
             >
               Languages Used Across My Repositories
             </text>
           '''
 
-          y = 82
+          y = 80
 
           for row in rows:
-              text = "  •  ".join(row)
+
+              row_text = "  •  ".join(row)
 
               svg += f'''
-                <text
-                  class="language"
-                  x="{padding}"
-                  y="{y}"
-                >{html.escape(text)}</text>
+              <text
+                class="text"
+                x="{padding}"
+                y="{y}"
+              >
+                {html.escape(row_text)}
+              </text>
               '''
 
-              y += 32
+              y += 30
 
           svg += "</svg>"
 
-          with open("profile/languages.svg", "w", encoding="utf-8") as file:
+          with open(
+              "profile/languages.svg",
+              "w",
+              encoding="utf-8"
+          ) as file:
               file.write(svg)
 
+
+          # =====================================================
+          # CARD 2:
+          # Most Used Languages
+          # =====================================================
+
+          top_languages = languages[:10]
+
+          row_height = 32
+          height = 90 + (len(top_languages) * row_height)
+
+          if not top_languages:
+              height = 140
+
+          svg = f'''
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="{width}"
+               height="{height}"
+               viewBox="0 0 {width} {height}">
+
+            <style>
+              .card {{
+                fill: #00000000;
+                stroke: #e4e2e2;
+                stroke-width: 1;
+              }}
+
+              .title {{
+                fill: #00aeef;
+                font-family: -apple-system, BlinkMacSystemFont,
+                             "Segoe UI", Helvetica, Arial, sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+              }}
+
+              .language {{
+                fill: #8b949e;
+                font-family: -apple-system, BlinkMacSystemFont,
+                             "Segoe UI", Helvetica, Arial, sans-serif;
+                font-size: 15px;
+                font-weight: 500;
+              }}
+
+              .percentage {{
+                fill: #8b949e;
+                font-family: -apple-system, BlinkMacSystemFont,
+                             "Segoe UI", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+              }}
+
+              .bar-bg {{
+                fill: #30363d;
+              }}
+
+              .bar {{
+                fill: #00aeef;
+              }}
+            </style>
+
+            <rect
+              class="card"
+              x="0.5"
+              y="0.5"
+              width="{width - 1}"
+              height="{height - 1}"
+              rx="6"
+            />
+
+            <text
+              class="title"
+              x="{padding}"
+              y="40"
+            >
+              Most Used Languages
+            </text>
+          '''
+
+          y = 75
+
+          if top_languages:
+
+              for language, size in top_languages:
+
+                  percentage = (
+                      (size / total_bytes) * 100
+                      if total_bytes
+                      else 0
+                  )
+
+                  bar_width = 280
+                  filled_width = (
+                      bar_width * percentage / 100
+                  )
+
+                  svg += f'''
+                  <text
+                    class="language"
+                    x="{padding}"
+                    y="{y}"
+                  >
+                    {html.escape(language)}
+                  </text>
+
+                  <text
+                    class="percentage"
+                    x="450"
+                    y="{y}"
+                    text-anchor="end"
+                  >
+                    {percentage:.1f}%
+                  </text>
+
+                  <rect
+                    class="bar-bg"
+                    x="150"
+                    y="{y - 11}"
+                    width="{bar_width}"
+                    height="8"
+                    rx="4"
+                  />
+
+                  <rect
+                    class="bar"
+                    x="150"
+                    y="{y - 11}"
+                    width="{filled_width:.1f}"
+                    height="8"
+                    rx="4"
+                  />
+                  '''
+
+                  y += row_height
+
+          else:
+
+              svg += '''
+              <text
+                class="language"
+                x="25"
+                y="80"
+              >
+                No language data found
+              </text>
+              '''
+
+          svg += "</svg>"
+
+          with open(
+              "profile/top-langs.svg",
+              "w",
+              encoding="utf-8"
+          ) as file:
+              file.write(svg)
+
+
+          # -----------------------------------------------------
+          # Log useful information without exposing repo names
+          # -----------------------------------------------------
+          print(
+              f"Repositories included: "
+              f"{len([r for r in repos if not r.get('fork')])}"
+          )
+
           print("Languages found:")
-          for language in languages:
+
+          for language, size in languages:
               print(f" - {language}")
+
           PY
 
       # ---------------------------------------------------------
-      # 3. Most Used Languages
-      # ---------------------------------------------------------
-      - name: Generate Most Used Languages
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: top-langs
-          options: username=GamingEvolutionCentre&theme=transparent&langs_count=10&layout=compact&custom_title=Most%20Used%20Languages
-          path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      # ---------------------------------------------------------
-      # Commit all three cards
+      # Commit generated cards
       # ---------------------------------------------------------
       - name: Commit generated stats
         run: |
@@ -266,13 +409,5 @@ jobs:
 
           git diff --cached --quiet && exit 0
 
-          git commit -m "Update GitHub stats"
-          git push
-      - name: Commit generated stats
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/
-          git diff --cached --quiet && exit 0
           git commit -m "Update GitHub stats"
           git push
