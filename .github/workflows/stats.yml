@@ -316,7 +316,7 @@ jobs:
                       else 0
                   )
 
-                  bar_width = 280
+                  bar_width = 230
                   filled_width = (
                       bar_width * percentage / 100
                   )
