@@ -24,6 +24,14 @@ jobs:
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Generate Languages Used Across Repositories
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=GamingEvolutionCentre&theme=transparent&langs_count=10&layout=compact&custom_title=Languages%20Used%20Across%20My%20Repositories
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: Generate Most Used Languages
         uses: stats-organization/github-readme-stats-action@v2
         with:
