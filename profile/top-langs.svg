@@ -1,47 +1,79 @@
 
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="500"
-     height="410"
-     viewBox="0 0 500 410">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="500"
+    height="410"
+    viewBox="0 0 500 410"
+>
 
   <style>
+
     .card {
       fill: #00000000;
       stroke: #e4e2e2;
       stroke-width: 1;
     }
 
+
     .title {
       fill: #00aeef;
-      font-family: -apple-system, BlinkMacSystemFont,
-                   "Segoe UI", Helvetica, Arial, sans-serif;
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
       font-size: 20px;
       font-weight: 600;
     }
 
+
     .language {
       fill: #8b949e;
-      font-family: -apple-system, BlinkMacSystemFont,
-                   "Segoe UI", Helvetica, Arial, sans-serif;
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
       font-size: 15px;
       font-weight: 500;
     }
 
+
     .percentage {
       fill: #8b949e;
-      font-family: -apple-system, BlinkMacSystemFont,
-                   "Segoe UI", Helvetica, Arial, sans-serif;
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
       font-size: 14px;
+      font-weight: 400;
     }
+
 
     .bar-bg {
       fill: #30363d;
     }
 
+
     .bar {
       fill: #00aeef;
     }
+
   </style>
+
 
   <rect
     class="card"
@@ -52,6 +84,7 @@
     rx="6"
   />
 
+
   <text
     class="title"
     x="25"
@@ -59,6 +92,7 @@
   >
     Most Used Languages
   </text>
+
 
         <text
           class="language"
@@ -68,33 +102,41 @@
           Lua
         </text>
 
+        
+
         <rect
           class="bar-bg"
-          x="185"
+          x="200"
           y="64"
           width="200"
           height="8"
           rx="4"
         />
 
+        
+
         <rect
           class="bar"
-          x="185"
+          x="200"
           y="64"
           width="118.9"
           height="8"
           rx="4"
         />
 
+        
+
         <text
           class="percentage"
-          x="450"
+          x="465"
           y="75"
           text-anchor="end"
         >
           59.4%
         </text>
+
         
+
         <text
           class="language"
           x="25"
@@ -103,33 +145,41 @@
           Shell
         </text>
 
+        
+
         <rect
           class="bar-bg"
-          x="185"
+          x="200"
           y="96"
           width="200"
           height="8"
           rx="4"
         />
 
+        
+
         <rect
           class="bar"
-          x="185"
+          x="200"
           y="96"
           width="53.2"
           height="8"
           rx="4"
         />
 
+        
+
         <text
           class="percentage"
-          x="450"
+          x="465"
           y="107"
           text-anchor="end"
         >
           26.6%
         </text>
+
         
+
         <text
           class="language"
           x="25"
@@ -138,33 +188,41 @@
           Tree-sitter Query
         </text>
 
+        
+
         <rect
           class="bar-bg"
-          x="185"
+          x="200"
           y="128"
           width="200"
           height="8"
           rx="4"
         />
 
+        
+
         <rect
           class="bar"
-          x="185"
+          x="200"
           y="128"
           width="10.0"
           height="8"
           rx="4"
         />
 
+        
+
         <text
           class="percentage"
-          x="450"
+          x="465"
           y="139"
           text-anchor="end"
         >
           5.0%
         </text>
+
         
+
         <text
           class="language"
           x="25"
@@ -173,33 +231,41 @@
           QML
         </text>
 
+        
+
         <rect
           class="bar-bg"
-          x="185"
+          x="200"
           y="160"
           width="200"
           height="8"
           rx="4"
         />
 
+        
+
         <rect
           class="bar"
-          x="185"
+          x="200"
           y="160"
           width="4.1"
           height="8"
           rx="4"
         />
 
+        
+
         <text
           class="percentage"
-          x="450"
+          x="465"
           y="171"
           text-anchor="end"
         >
           2.1%
         </text>
+
         
+
         <text
           class="language"
           x="25"
@@ -208,33 +274,41 @@
           CSS
         </text>
 
+        
+
         <rect
           class="bar-bg"
-          x="185"
+          x="200"
           y="192"
           width="200"
           height="8"
           rx="4"
         />
 
+        
+
         <rect
           class="bar"
-          x="185"
+          x="200"
           y="192"
           width="2.7"
           height="8"
           rx="4"
         />
 
+        
+
         <text
           class="percentage"
-          x="450"
+          x="465"
           y="203"
           text-anchor="end"
         >
           1.4%
         </text>
+
         
+
         <text
           class="language"
           x="25"
@@ -243,33 +317,41 @@
           Vim Script
         </text>
 
+        
+
         <rect
           class="bar-bg"
-          x="185"
+          x="200"
           y="224"
           width="200"
           height="8"
           rx="4"
         />
 
+        
+
         <rect
           class="bar"
-          x="185"
+          x="200"
           y="224"
           width="2.7"
           height="8"
           rx="4"
         />
 
+        
+
         <text
           class="percentage"
-          x="450"
+          x="465"
           y="235"
           text-anchor="end"
         >
           1.3%
         </text>
+
         
+
         <text
           class="language"
           x="25"
@@ -278,33 +360,41 @@
           Python
         </text>
 
+        
+
         <rect
           class="bar-bg"
-          x="185"
+          x="200"
           y="256"
           width="200"
           height="8"
           rx="4"
         />
 
+        
+
         <rect
           class="bar"
-          x="185"
+          x="200"
           y="256"
           width="2.4"
           height="8"
           rx="4"
         />
 
+        
+
         <text
           class="percentage"
-          x="450"
+          x="465"
           y="267"
           text-anchor="end"
         >
           1.2%
         </text>
+
         
+
         <text
           class="language"
           x="25"
@@ -313,33 +403,41 @@
           JavaScript
         </text>
 
+        
+
         <rect
           class="bar-bg"
-          x="185"
+          x="200"
           y="288"
           width="200"
           height="8"
           rx="4"
         />
 
+        
+
         <rect
           class="bar"
-          x="185"
+          x="200"
           y="288"
           width="2.0"
           height="8"
           rx="4"
         />
 
+        
+
         <text
           class="percentage"
-          x="450"
+          x="465"
           y="299"
           text-anchor="end"
         >
           1.0%
         </text>
+
         
+
         <text
           class="language"
           x="25"
@@ -348,33 +446,41 @@
           C
         </text>
 
+        
+
         <rect
           class="bar-bg"
-          x="185"
+          x="200"
           y="320"
           width="200"
           height="8"
           rx="4"
         />
 
+        
+
         <rect
           class="bar"
-          x="185"
+          x="200"
           y="320"
           width="1.5"
           height="8"
           rx="4"
         />
 
+        
+
         <text
           class="percentage"
-          x="450"
+          x="465"
           y="331"
           text-anchor="end"
         >
           0.8%
         </text>
+
         
+
         <text
           class="language"
           x="25"
@@ -383,30 +489,37 @@
           Cap&#x27;n Proto
         </text>
 
+        
+
         <rect
           class="bar-bg"
-          x="185"
+          x="200"
           y="352"
           width="200"
           height="8"
           rx="4"
         />
 
+        
+
         <rect
           class="bar"
-          x="185"
+          x="200"
           y="352"
           width="0.4"
           height="8"
           rx="4"
         />
 
+        
+
         <text
           class="percentage"
-          x="450"
+          x="465"
           y="363"
           text-anchor="end"
         >
           0.2%
         </text>
+
         </svg>

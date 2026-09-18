@@ -1,10 +1,13 @@
 
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="500"
-     height="555"
-     viewBox="0 0 500 555">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="500"
+    height="555"
+    viewBox="0 0 500 555"
+>
 
   <style>
+
     .card {
       fill: #00000000;
       stroke: #e4e2e2;
@@ -13,20 +16,35 @@
 
     .title {
       fill: #00aeef;
-      font-family: -apple-system, BlinkMacSystemFont,
-                   "Segoe UI", Helvetica, Arial, sans-serif;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
       font-size: 20px;
       font-weight: 600;
     }
 
     .text {
       fill: #8b949e;
-      font-family: -apple-system, BlinkMacSystemFont,
-                   "Segoe UI", Helvetica, Arial, sans-serif;
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
       font-size: 15px;
       font-weight: 500;
     }
+
   </style>
+
 
   <rect
     class="card"
@@ -37,6 +55,7 @@
     rx="6"
   />
 
+
   <text
     class="title"
     x="25"
@@ -45,6 +64,7 @@
     Languages Used Across My Repositories
   </text>
 
+
     <text
       class="text"
       x="25"
@@ -52,7 +72,9 @@
     >
       Lua  •  Shell  •  Tree-sitter Query  •  QML
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -60,7 +82,9 @@
     >
       CSS  •  Vim Script  •  Python  •  JavaScript  •  C
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -68,7 +92,9 @@
     >
       Cap&#x27;n Proto  •  Rust  •  Makefile  •  Nix
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -76,7 +102,9 @@
     >
       Scheme  •  PowerShell  •  HTML  •  Ruby  •  Gleam
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -84,7 +112,9 @@
     >
       Haskell  •  GLSL  •  Smali  •  PHP  •  Roff  •  Sway
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -92,7 +122,9 @@
     >
       ReScript  •  Solidity  •  TypeScript  •  TeX
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -100,7 +132,9 @@
     >
       Vue  •  Hack  •  Swift  •  C++  •  Julia  •  Clojure
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -108,7 +142,9 @@
     >
       R  •  Go  •  Elixir  •  HCL  •  Jinja  •  Meson
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -116,7 +152,9 @@
     >
       Typst  •  Dart  •  Vim Snippet  •  Java  •  Svelte
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -124,7 +162,9 @@
     >
       PLpgSQL  •  WGSL  •  GDShader  •  Puppet
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -132,7 +172,9 @@
     >
       Pascal  •  Cuda  •  Starlark  •  CWeb
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -140,7 +182,9 @@
     >
       SystemVerilog  •  Zig  •  Nushell  •  Mermaid
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -148,7 +192,9 @@
     >
       Elm  •  Scala  •  GDScript  •  VHDL  •  SCSS  •  Nu
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -156,7 +202,9 @@
     >
       C#  •  Nickel  •  Just  •  Dockerfile
     </text>
+
     
+
     <text
       class="text"
       x="25"
@@ -164,4 +212,5 @@
     >
       RenderScript  •  CodeQL
     </text>
+
     </svg>
