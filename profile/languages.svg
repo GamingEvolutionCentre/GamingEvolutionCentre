@@ -1,8 +1,8 @@
 
 <svg xmlns="http://www.w3.org/2000/svg"
      width="500"
-     height="140"
-     viewBox="0 0 500 140">
+     height="135"
+     viewBox="0 0 500 135">
 
   <style>
     .card {
@@ -19,27 +19,12 @@
       font-weight: 600;
     }
 
-    .language {
+    .text {
       fill: #8b949e;
       font-family: -apple-system, BlinkMacSystemFont,
                    "Segoe UI", Helvetica, Arial, sans-serif;
       font-size: 15px;
       font-weight: 500;
-    }
-
-    .percentage {
-      fill: #8b949e;
-      font-family: -apple-system, BlinkMacSystemFont,
-                   "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 14px;
-    }
-
-    .bar-bg {
-      fill: #30363d;
-    }
-
-    .bar {
-      fill: #00aeef;
     }
   </style>
 
@@ -48,7 +33,7 @@
     x="0.5"
     y="0.5"
     width="499"
-    height="139"
+    height="134"
     rx="6"
   />
 
@@ -57,11 +42,11 @@
     x="25"
     y="40"
   >
-    Most Used Languages
+    Languages Used Across My Repositories
   </text>
 
     <text
-      class="language"
+      class="text"
       x="25"
       y="80"
     >
