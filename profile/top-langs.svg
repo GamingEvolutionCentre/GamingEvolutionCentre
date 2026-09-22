@@ -119,7 +119,7 @@
           class="bar"
           x="200"
           y="64"
-          width="118.9"
+          width="118.6"
           height="8"
           rx="4"
         />
@@ -132,7 +132,7 @@
           y="75"
           text-anchor="end"
         >
-          59.4%
+          59.3%
         </text>
 
         
@@ -162,7 +162,7 @@
           class="bar"
           x="200"
           y="96"
-          width="53.2"
+          width="53.5"
           height="8"
           rx="4"
         />
@@ -175,7 +175,7 @@
           y="107"
           text-anchor="end"
         >
-          26.6%
+          26.7%
         </text>
 
         
@@ -261,7 +261,7 @@
           y="171"
           text-anchor="end"
         >
-          2.1%
+          2.0%
         </text>
 
         
@@ -304,7 +304,7 @@
           y="203"
           text-anchor="end"
         >
-          1.4%
+          1.3%
         </text>
 
         
